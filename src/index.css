@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+.btn {
+  @apply bg-pink-300 text-pink-500 px-2 px-4 rounded-lg hover:bg-pink-500 transition duration-150 ease-in-out hover:text-pink-700 border-2 border-pink-100 ;
+}

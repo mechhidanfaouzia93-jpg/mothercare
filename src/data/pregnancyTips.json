@@ -1,0 +1,126 @@
+[
+  {
+    "week": 4,
+    "title": "Début de grossesse 🤰",
+    "momChanges": [
+      "Fatigue intense",
+      "Seins sensibles",
+      "Petits nausées possibles"
+    ],
+    "babyDevelopment": [
+      "Embryon commence à se former",
+      "Début du développement du système nerveux"
+    ],
+    "tips": [
+      "Commencer acide folique",
+      "Boire beaucoup d’eau"
+    ],
+    "donts": [
+      "Alcool 🚫",
+      "Tabac 🚫",
+      "Médicaments sans avis médical 🚫"
+    ]
+  },
+
+  {
+    "week": 8,
+    "title": "Développement rapide 👶",
+    "momChanges": [
+      "Nausées fréquentes",
+      "Fatigue persistante"
+    ],
+    "babyDevelopment": [
+      "Cœur bat déjà ❤️",
+      "Formation des organes principaux"
+    ],
+    "tips": [
+      "Manger léger mais fréquent",
+      "Se reposer souvent"
+    ],
+    "donts": [
+      "Poisson cru 🚫",
+      "Fromage non pasteurisé 🚫"
+    ]
+  },
+
+  {
+    "week": 12,
+    "title": "Fin du 1er trimestre 🌸",
+    "momChanges": [
+      "Moins de nausées",
+      "Plus d’énergie"
+    ],
+    "babyDevelopment": [
+      "Organes formés",
+      "Début des mouvements"
+    ],
+    "tips": [
+      "Échographie importante",
+      "Continuer suivi médical"
+    ],
+    "donts": [
+      "Stress excessif 🚫",
+      "Fatigue extrême 🚫"
+    ]
+  },
+
+  {
+    "week": 20,
+    "title": "Échographie morphologique 📸",
+    "momChanges": [
+      "Ventre visible",
+      "Énergie revient"
+    ],
+    "babyDevelopment": [
+      "Bébé entend les sons",
+      "Bouge activement"
+    ],
+    "tips": [
+      "Parler au bébé",
+      "Hydratation peau"
+    ],
+    "donts": [
+      "Position debout longue 🚫"
+    ]
+  },
+
+  {
+    "week": 28,
+    "title": "3e trimestre 🍼",
+    "momChanges": [
+      "Fatigue revient",
+      "Essoufflement"
+    ],
+    "babyDevelopment": [
+      "Prise de poids rapide",
+      "Cerveau en développement avancé"
+    ],
+    "tips": [
+      "Préparer valise maternité",
+      "Repos important"
+    ],
+    "donts": [
+      "Efforts physiques lourds 🚫"
+    ]
+  },
+
+  {
+    "week": 36,
+    "title": "Accouchement proche 👶",
+    "momChanges": [
+      "Contractions possibles",
+      "Fatigue importante"
+    ],
+    "babyDevelopment": [
+      "Bébé prêt à naître",
+      "Position tête en bas"
+    ],
+    "tips": [
+      "Surveiller contractions",
+      "Se reposer beaucoup"
+    ],
+    "donts": [
+      "Voyages longs 🚫"
+    ]
+  }
+]

@@ -16,6 +16,7 @@ export const Header = () => {
 
 
         <div className="flex items-center gap-3">
+          <NavLink to="/" className="flex items-center gap-3">
           <img
             src="/icons/logo-mother-care.png"
             alt="MotherCare logo"
@@ -24,6 +25,7 @@ export const Header = () => {
           <h1 className="text-2xl font-bold text-pink-500 tracking-wide">
             Mother<span className="text-pink-300">Care</span>
           </h1>
+           </NavLink>
         </div>
 
         <nav className="flex items-center gap-6">

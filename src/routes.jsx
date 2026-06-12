@@ -15,6 +15,7 @@ import MamanPages from "/src/layouts/pages/MamanPages";
 import About from "./layouts/pages/About";
 import Faq from "./layouts/pages/Faq";
 import { ProtectedPage } from "./features/auth/ProtectedPage";
+import RendezVous from "./layouts/pages/RendezVous";
 
 
 export const routes = [
@@ -39,6 +40,10 @@ export const routes = [
             path: "advices",
             element: <Advices />
 
+        },
+        {
+            path: "rendez-vous",
+            element: <RendezVous />
         },
             {
                 path: "auth",

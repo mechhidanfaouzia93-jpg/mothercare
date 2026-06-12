@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Le saviez-vous ?",
+    "description": "Même si les poumons sont les derniers organes à se développer complètement, votre bébé passe 30% à 40% de son temps à s'entraîner à respirer."
+  },
+  {
+    "id": 2,
+    "title": "Le saviez-vous ?",
+    "description": "Votre bébé commence à développer ses poumons dès le deuxième mois de grossesse."
+  },
+  {
+    "id": 3,
+    "title": "Le saviez-vous ?",
+    "description": "Le colostrum, le tout premier lait que votre bébé boira, est maintenant présent dans vos seins."
+  },
+  {
+    "id": 4,
+    "title": "Le saviez-vous ?",
+    "description": "Votre bébé peut maintenant voir et ses yeux sont grands ouverts."
+  },
+  {
+    "id": 5,
+    "title": "Le saviez-vous ?",
+    "description": "Si votre bébé n'a pas bougé depuis un moment, buvez de l'eau glacée ou écoutez de la musique."
+  },
+  {
+    "id": 6,
+    "title": "Le saviez-vous ?",
+    "description": "Le cerveau de votre bébé maintient sa température corporelle et contrôle sa respiration."
+  }
+]

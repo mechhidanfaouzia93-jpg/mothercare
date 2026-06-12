@@ -7,6 +7,8 @@ import AdviceCard from "/src/features/pages/maman/AdviceCard";
 
 import api from "/src/services/api";
 import MamanArticles from "../../features/pages/maman/MamanArticles";
+import DidYouKnow from "../../features/pages/maman/didYouKnow";
+import RendezVous from "./RendezVous";
 
 function MamanPage() {
   const [pregnancy, setPregnancy] = useState(null);
@@ -66,7 +68,7 @@ function MamanPage() {
       }
     };
 
-    fetchPregnancy();
+      fetchPregnancy();
   }, []);
 
   if (loading) {
@@ -103,16 +105,14 @@ function MamanPage() {
           pregnancy={pregnancy}
           user={user}
         />
+        <RendezVous />
 
-        <BabyDevelopment
+        {/* <BabyDevelopment
           pregnancy={pregnancy}
           user={user}
-        />
+        /> */}
 
-        <AdviceCard
-          pregnancy={pregnancy}
-          user={user}
-        />
+        <DidYouKnow />
 
         <MamanArticles />
 

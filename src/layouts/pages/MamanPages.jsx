@@ -10,7 +10,7 @@ import MamanArticles from "../../features/pages/maman/MamanArticles";
 import DidYouKnow from "../../features/pages/maman/didYouKnow";
 import RendezVous from "./RendezVous";
 
-function MamanPage() {
+function MamanPages() {
   const [pregnancy, setPregnancy] = useState(null);
   const [user, setUser] = useState(null);
 
@@ -121,4 +121,4 @@ function MamanPage() {
   );
 }
 
-export default MamanPage;
+export default MamanPages;

@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 
-import PregnancyCard from "/src/features/pages/maman/PregnancyCard";
-import WeekProgress from "/src/features/pages/maman/WeekProgress";
-import BabyDevelopment from "/src/features/pages/maman/BabyDevelopment";
-import AdviceCard from "/src/features/pages/maman/AdviceCard";
+import PregnancyCard from "../../features/pages/maman/PregnancyCard";
+import WeekProgress from "../../features/pages/maman/WeekProgress";
+import BabyDevelopment from "../../features/pages/maman/BabyDevelopment";
+import AdviceCard from "../../features/pages/maman/AdviceCard";
 
-import api from "/src/services/api";
-import MamanArticles from "./features/pages/maman/MamanArticles";
-import DidYouKnow from "./features/pages/maman/DidYouKnow";
+import api from "../../services/api";
+import MamanArticles from "../../features/pages/maman/MamanArticles";
+import DidYouKnow from "../../features/pages/maman/DidYouKnow";
 import RendezVous from "./RendezVous";
 
 function MamanPages() {
@@ -27,29 +27,27 @@ function MamanPages() {
         // USER
         setUser(res.data);
 
-        // DATE DE DÉBUT GROSSESSE
-        const startDate = new Date(
-          res.data.pregnancyStart
-        );
+        // DATE DE DÉBUT DE GROSSESSE
+        const startDate = new Date(res.data.pregnancyStart);
 
         console.log("START DATE:", startDate);
 
         const today = new Date();
 
-        // DIFFÉRENCE TEMPS
+        // DIFFÉRENCE EN MILLISECONDÈS
         const diffTime = today - startDate;
 
-        // CALCUL SEMAINES
+        // CALCUL DES SEMAINES
         const week = Math.floor(
           diffTime / (1000 * 60 * 60 * 24 * 7)
         );
 
-        // CALCUL JOURS PASSÉS
+        // CALCUL DES JOURS PASSÉS
         const passedDays = Math.floor(
           diffTime / (1000 * 60 * 60 * 24)
         );
 
-        // CALCUL JOURS RESTANTS
+        // CALCUL DES JOURS RESTANTS
         const daysLeft = 280 - passedDays;
 
         // DONNÉES PERSONNALISÉES
@@ -58,7 +56,6 @@ function MamanPages() {
           week,
           daysLeft,
         });
-
       } catch (err) {
         console.error("MamanPage error:", err);
 
@@ -68,9 +65,10 @@ function MamanPages() {
       }
     };
 
-      fetchPregnancy();
+    fetchPregnancy();
   }, []);
 
+  // CHARGEMENT
   if (loading) {
     return (
       <p className="text-center mt-10 text-gray-500">
@@ -79,6 +77,7 @@ function MamanPages() {
     );
   }
 
+  // ERREUR
   if (error) {
     return (
       <p className="text-center mt-10 text-red-500">
@@ -96,24 +95,38 @@ function MamanPages() {
 
       <div className="grid md:grid-cols-2 gap-6">
 
+        {/* CARTE GROSSESSE */}
         <PregnancyCard
           pregnancy={pregnancy}
           user={user}
         />
 
+        {/* PROGRESSION */}
         <WeekProgress
           pregnancy={pregnancy}
           user={user}
         />
+
+        {/* RENDEZ-VOUS */}
         <RendezVous />
 
-        {/* <BabyDevelopment
+        {/* DÉVELOPPEMENT DU BÉBÉ */}
+        {/* 
+        <BabyDevelopment
           pregnancy={pregnancy}
           user={user}
-        /> */}
+        />
+        */}
 
+        {/* CONSEIL */}
+        {/* 
+        <AdviceCard />
+        */}
+
+        {/* LE SAVIEZ-VOUS */}
         <DidYouKnow />
 
+        {/* ARTICLES */}
         <MamanArticles />
 
       </div>

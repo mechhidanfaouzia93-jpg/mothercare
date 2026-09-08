@@ -6,7 +6,7 @@ import BabyDevelopment from "/src/features/pages/maman/BabyDevelopment";
 import AdviceCard from "/src/features/pages/maman/AdviceCard";
 
 import api from "/src/services/api";
-import MamanArticles from "../../features/pages/maman/MamanArticles";
+import MamanArticles from "./features/pages/maman/MamanArticles";
 import DidYouKnow from "./features/pages/maman/DidYouKnow";
 import RendezVous from "./RendezVous";
 

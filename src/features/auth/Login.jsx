@@ -26,7 +26,7 @@ export const Login = () => {
         throw new Error("Token manquant");
       }
 
-      // ✅ ICI SEULEMENT
+      
       setToken(res.token);
       localStorage.setItem("token", res.token);
 

@@ -48,7 +48,7 @@
      
 //     }
 
-//     // 💥 erreur serveur
+//     //  erreur serveur
 //     if (status >= 500) {
 //       console.error("💥 Server error");
 //     }
@@ -66,7 +66,7 @@ import { tokenAtom } from "../atoms/auth.atom";
 
 
 const api = axios.create({
-  baseURL: "http://localhost:3000/api",
+  baseURL: import.meta.env.VITE_API_URL,// baseURL: "http://localhost:3000/api",
   timeout: 10000, 
 });
 

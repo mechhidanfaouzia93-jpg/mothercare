@@ -1,5 +1,5 @@
 import { useState } from "react";
-import data from "./data/didYouKnow.json";
+import data from "../../../data/didYouKnow.json";
 
 function DidYouKnow() {
   const [index, setIndex] = useState(0);

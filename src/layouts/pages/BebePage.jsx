@@ -93,18 +93,18 @@ const growthData = growthTable.map((p) => ({
 
       <div className="grid md:grid-cols-2 gap-6">
 
-        {/* CARD BÉBÉ */}
+      
         <BabyCard
           pregnancy={baby}
           user={baby}
         />
 
-        {/* GRAPH */}
+      
         <GrowthChart
           data={growthData}
         />
 
-        {/* ARTICLES */}
+      
         <BebeArticles />
 
       </div>
